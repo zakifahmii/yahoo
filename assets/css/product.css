@@ -1,0 +1,229 @@
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: #111;
+    color: white;
+    padding: 20px 50px;
+}
+
+.navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.searchInput {
+    border: none;
+    background-color: transparent;
+}
+
+.searchInput::placeholder {
+    color: lightgray;
+}
+
+.limitedOffer {
+    font-size: 20px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+}
+
+.limitedOffer img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.navBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuItem {
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+}
+
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.featureIcon {
+    width: 50px;
+    height: 50px;
+}
+
+.featureTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.featureDesc {
+    color: gray;
+    width: 50%;
+    height: 100px;
+}
+
+.nav-pills li a:hover {
+    background-color: black;
+}
+
+.productButton2 {
+    float: right;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    transition: 0.5s ease;
+}
+
+.productButton2:hover {
+    color: white;
+    background-color: black;
+}
+
+
+/* navbar pinggir selesai */
+
+body {
+    background: #eee;
+}
+
+#side_nav {
+    background: #111;
+    min-width: 200px;
+    max-width: 200px;
+    transition: all 0.3s;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.content {
+    min-height: 100vh;
+    width: 100%;
+}
+
+hr.h-color {
+    background: #eee;
+}
+
+.sidebar li.active {
+    background: #eee;
+    border-radius: 8px;
+}
+
+.sidebar li.active a,
+.sidebar li.active a:hover {
+    color: black;
+}
+
+.sidebar li a {
+    color: #fff;
+}
+
+@media(max-width: 767px) {
+    #side_nav {
+        margin-left: -250px;
+        position: absolute;
+        min-height: 100vh;
+        z-index: 1;
+    }
+
+    #side_nav.active {
+        margin-left: 0;
+    }
+}
+
+
+/* bagian product */
+
+.gallary {
+    margin-top: 50px;
+}
+
+.gallary .card {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 1)0px 2px 6px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.gallary .card img {
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.gallary .card img:hover {
+    transform: scale(1.1);
+}
+
+
+/* bagian product selesai */
+
+
+/* Navbar  responsif*/
+
+@media screen and (max-width:480px) {
+    nav {
+        padding: 20px;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .navBottom {
+        flex-wrap: wrap;
+    }
+
+    .menuItem {
+        margin: 20px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .payment {
+        width: 50%;
+        height: 50%;
+        padding: 20px;
+    }
+}
